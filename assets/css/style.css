@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+/* ===== Header ===== */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    transition: all 0.42s ease;
+}
+
+.logo {
+    width: 116px;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 10px 22px;
+    position: relative;
+}
+
+.nav-list li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #212832;
+}
+
+.nav-list li a::before {
+    position: absolute;
+    content: '';
+    bottom: 7px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #212832;
+    border-radius: 10px;
+    transition: all 0.42s ease;
+}
+
+.nav-list li a:hover::before {
+    width: 100%;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sign-up a {
+    display: inline-block;
+    border: 2px solid #212832;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #212832;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#menu-icon {
+    font-size: 33px;
+    color: #212832;
+    cursor: pointer;
+    display: none;
+}
+
+/* ===== All sections ===== */
+section {
+    padding: 100px 10%;
+    width: 100%;
+}
+
+/* ===== Home section ===== */
+.home {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    background: url("../images/Decore.png") no-repeat center / cover;
+}
+
+.home-image img {
+    width: 520px;
+    max-width: 100%;
+    height: auto;
+}
+
+.home-text h3 {
+    color: #d46951;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.home-text h1 {
+    color: #181e4b;
+    font-size: 4rem;
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.home-text p {
+    color: #5e6282;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 20px 0 25px;
+}
+
+.find-out-more {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+}
+
+.find-out-more .home-button {
+    background-color: #f1a501;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.42s ease;
+}  
+
+.find-out-more .home-button:hover {
+    transform: translateY(-5px);
+}
+
+.find-out-more .home-demo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #5e6282;
+}
+
+.find-out-more .home-demo i {
+    background-color: #df6951;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin-right: 12px;
+    box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+    transition: 0.42s ease;
+}
+
+.find-out-more .home-demo i:hover {
+    background-color: transparent;
+    color: #212832;
+}
