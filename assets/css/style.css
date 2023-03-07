@@ -258,3 +258,60 @@ section {
     transform: translateY(-5px);
     cursor: pointer;
 }
+
+/* ===== Destinations section ===== */
+.destinations-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.destination-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.destination-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.45s ease;
+}
+
+.destination-box h6 {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.box-city-name {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.box-city-name h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.box-city-name p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.destination-box:hover img {
+    filter: brightness(50%) hue-rotate(45deg);
+    transform: scale(1.1);
+    cursor: pointer;
+}
