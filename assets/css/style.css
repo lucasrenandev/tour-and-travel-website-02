@@ -18,12 +18,13 @@ body {
 }
 
 /* ===== Header ===== */
-header {
+.header {
     width: 100%;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,8 +89,15 @@ header {
 #menu-icon {
     font-size: 33px;
     color: #212832;
+    z-index: 1001;
     cursor: pointer;
     display: none;
+}
+
+.header.sticky {
+    background-color: #fff1da;
+    padding: 20px 10%;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 8%);
 }
 
 /* ===== All sections ===== */
@@ -187,4 +195,66 @@ section {
 .find-out-more .home-demo i:hover {
     background-color: transparent;
     color: #212832;
+}
+
+/* ===== Category section ===== */
+.center-text {
+    text-align: center;
+}
+
+.center-text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5e6282;
+    text-transform: uppercase;
+}
+
+.center-text h2 {
+    font-size: 50px;
+    font-family: "Volkhov";
+    font-weight: 700;
+    color: #181e4b;
+    text-transform: capitalize;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.category-box {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .1) -4px 9px 25px -6px;
+    padding: 60px 40px;
+    transition: all 0.42s ease;
+}
+
+.category-box img {
+    width: 75px;
+    max-width: 100%;
+    height: auto;
+}
+
+.category-box h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e1d4c;
+    text-transform: capitalize;
+    margin: 20px 0 15px;
+}
+
+.category-box p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5e6282;
+    line-height: 25px;
+}
+
+.category-box:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
 }
