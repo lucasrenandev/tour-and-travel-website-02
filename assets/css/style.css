@@ -213,7 +213,7 @@ section {
     font-size: 50px;
     font-family: "Volkhov";
     font-weight: 700;
-    color: #181e4b;
+    color: #14183e;
     text-transform: capitalize;
 }
 
@@ -314,4 +314,60 @@ section {
     filter: brightness(50%) hue-rotate(45deg);
     transform: scale(1.1);
     cursor: pointer;
+}
+
+/* ===== Testimonials section ===== */
+.testimonials {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.test-left-side {
+    flex: 1;
+}
+
+.test-left-side h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #5e6282;
+    margin-bottom: 5px;
+}
+
+.test-left-side h2 {
+    font-size: 50px;
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    color: #14183e;
+    text-transform: capitalize;
+}
+
+.test-right-side {
+    flex: 1;
+}
+
+.test-right-side img {
+    width: 68px;
+    max-width: 100%;
+    height: auto;
+}
+
+.test-right-side h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5e6282;
+}
+
+.test-right-side h6 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #5e6282;
+    margin-bottom: 1rem;
+}
+
+.test-right-side p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #5e6282;
 }
